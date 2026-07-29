@@ -5,3 +5,9 @@ console.log("Heading element: ", heading)
 let msg = document.getElementById("message")
 msg.innerHTML = "Javascript is fun"
 console.log("Message element: ", msg)
+function showmessage(){
+    alert("welcome to NRIIT Learning Management System")
+}
+function changeHeading(){
+    document.getElementById("welcome").innerHTML ="Welcome Python FullStack Developers"
+}
