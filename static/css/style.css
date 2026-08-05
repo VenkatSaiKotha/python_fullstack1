@@ -22,17 +22,17 @@ hr {
     margin: 20px 0;
 }
 
-nav {
+nav{
 
-    display: flex;
+    display:flex;
 
-    justify-content: center;
+    justify-content:center;
 
-    gap: 25px;
+    gap:25px;
 
-    margin-top: 20px;
+    margin-top:20px;
 
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 
 }
 
@@ -309,26 +309,26 @@ audio {
 
 }
 
-.trainer-container {
+.trainer-container{
 
-    display: grid;
+    display:grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:repeat(3,1fr);
 
-    gap: 25px;
-
-}
-
-article {
-
-    text-align: center;
+    gap:25px;
 
 }
 
-img {
+article{
 
-    max-width: 100%;
+    text-align:center;
 
-    height: auto;
+}
+
+img{
+
+max-width:100%;
+
+height:auto;
 
 }
