@@ -18,8 +18,12 @@
       <a href="/about">About</a>
       <a href="/courses">Courses</a>
       <a href="/trainers">Trainers</a>
+      {% if session.get('user_email') %}
+      <a href="/logout">Logout</a>
+      {% else %}
       <a href="/register">Register</a>
       <a href="/login">Login</a>
+      {% endif %}
       <a href="/contact">Contact</a>
     </nav>
   </header>
@@ -38,11 +42,11 @@
       </tr>
     </table>
     <br>
-    <button id="nextcourseBtn">Next Course</button>
-    <button id="courseMode">Offline</button>
+    <button id="nextCourseBtn">Next Course</button>
+    <button id="applyCourseBtn">Apply Now</button>
     <section>
       <h2>Learning Path</h2>
-      <ol>
+      <ol id="courseLearningPath">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>

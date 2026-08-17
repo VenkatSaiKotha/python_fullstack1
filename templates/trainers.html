@@ -18,8 +18,12 @@
             <a href="/about">About</a>
             <a href="/courses">Courses</a>
             <a href="/trainers">Trainers</a>
+            {% if session.get('user_email') %}
+            <a href="/logout">Logout</a>
+            {% else %}
             <a href="/register">Register</a>
             <a href="/login">Login</a>
+            {% endif %}
             <a href="/contact">Contact</a>
         </nav>
     </header>
@@ -27,11 +31,13 @@
         <section>
             <h2>Meet Our Trainers</h2>
             <article>
-                <img src="images/trainer1.jpg" alt="Python Trainer" width="180" class="trainer-image">
-                <h3>Mr. Sriram</h3>
-                <p>Python Full Stack Trainer</p>
-                <p>Experience: 4+ years</p>
+                <img id="trainerImg" src="{{ url_for('static', filename='images/trainer1.jpg') }}" alt="Trainer" width="180" class="trainer-image">
+                <h3 id="trainerName">Mr. Sriram</h3>
+                <p id="trainerRole">Python Full Stack Trainer</p>
+                <p id="trainerExp">Experience: 4+ years</p>
             </article>
+            <br>
+            <button id="nextTrainerBtn">Next Trainer</button>
         </section>
     </main>
     <footer>
